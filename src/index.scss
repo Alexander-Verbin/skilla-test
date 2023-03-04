@@ -1,0 +1,83 @@
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url('./fonts/SFProDisplay-Medium.eot');
+  src: local('./fonts/SF Pro Display Medium'), local('SFProDisplay-Medium'),
+  url('./fonts/SFProDisplay-Medium.eot?#iefix') format('embedded-opentype'),
+  url('./fonts/SFProDisplay-Medium.woff2') format('woff2'),
+  url('./fonts/SFProDisplay-Medium.woff') format('woff'),
+  url('./fonts/SFProDisplay-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url('./fonts/SFProDisplay-Regular.eot');
+  src: local('./fonts/SF Pro Display Regular'), local('SFProDisplay-Regular'),
+  url('./fonts/SFProDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+  url('./fonts/SFProDisplay-Regular.woff2') format('woff2'),
+  url('./fonts/SFProDisplay-Regular.woff') format('woff'),
+  url('./fonts/SFProDisplay-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  font-family: 'SF Pro Display';
+  font-style: normal;
+}
+
+body,
+ul,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  overflow: hidden;
+}
+ul,
+ol {
+  list-style: none;
+}
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+input[type='number'] {
+  -moz-appearance:textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
