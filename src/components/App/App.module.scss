@@ -1,0 +1,17 @@
+.App{
+  display: flex;
+  align-items: stretch;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.Nav{
+  flex: 0 0 240px;
+  min-height: 100%;
+  background-color: #091336;
+}
+
+.Content{
+  flex: 1 0 auto;
+  min-height: 100%;
+}
