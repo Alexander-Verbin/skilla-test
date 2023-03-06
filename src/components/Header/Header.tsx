@@ -1,19 +1,18 @@
 import React from "react";
 import style from "./Header.module.scss"
-import {useSelector} from "react-redux";
-import {getDate} from "../../store/Reducers/HeaderReducer/HeaderSelector";
 import {HandySvg} from "handy-svg";
 import search from "../../assets/images/svg/search.svg"
 import arrow from "../../assets/images/svg/arrow.svg"
 import avatar from "../../assets/images/avatar.png"
+import {Days, Months} from "../../constants/date";
 
 export const Header = () => {
-	const date = useSelector(getDate)
+	const date = new Date();
 	return (
 		<div className={style.wrapper}>
 			<div className={style.left}>
 				<div className={style.date}>
-					<p className={style.text}>{date.day}, {date.date} {date.month}</p>
+					<p className={style.text}>{Days[date.getDay()]}, {date.getDate()} {Months[date.getMonth()]}</p>
 				</div>
 				<div className={style.info}>
 					<div className={style.info__block}>
