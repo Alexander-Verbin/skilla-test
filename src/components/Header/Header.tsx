@@ -5,9 +5,11 @@ import search from "../../assets/images/svg/search.svg"
 import arrow from "../../assets/images/svg/arrow.svg"
 import avatar from "../../assets/images/avatar.png"
 import {Days, Months} from "../../constants/date";
+import {getListAPI} from "../../api/api";
 
 export const Header = () => {
 	const date = new Date();
+	const apiStartDate = String(`${date.getFullYear()}-${date.getMonth()}-${date.getDate()}`)
 	return (
 		<div className={style.wrapper}>
 			<div className={style.left}>
@@ -41,7 +43,7 @@ export const Header = () => {
 				</div>
 			</div>
 			<div className={style.right}>
-				<div className={style.search}>
+				<div className={style.search} onClick={()=>{getListAPI.getList(apiStartDate)}}>
 					<HandySvg src={search} width="16" height="16"/>
 				</div>
 				<div className={style.block}>

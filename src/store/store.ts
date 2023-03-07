@@ -1,12 +1,12 @@
 import {combineReducers, createStore, } from "redux";
-import HeaderReducer from "./Reducers/HeaderReducer/HeaderReducer";
+import AppReducer from "./Reducers/AppReducer/AppReducer";
 
 
 type RootReducerType = typeof rootReducer
 export type AppStateType = ReturnType<RootReducerType>
 
 const rootReducer = combineReducers({
-	header: HeaderReducer
+	app: AppReducer
 });
 
 //type PropertiesType<T> = T extends {[key: string]: infer U} ? U : never
